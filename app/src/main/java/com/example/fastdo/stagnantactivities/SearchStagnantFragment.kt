@@ -32,7 +32,7 @@ class SearchStagnantFragment : Fragment() {
     private lateinit var mProgressDialog: Dialog
     private lateinit var binding: FragmentSearchStagnantBinding
     private val list = ArrayList<SearchStagnantModel>()
-   private val myListSearch = ArrayList<SearchStagnantModel>()
+    private val myListSearch = ArrayList<SearchStagnantModel>()
     private val ref =
         FirebaseDatabase.getInstance().getReference(Constants.MARKET).child(Constants.DETAILS)
 
@@ -42,6 +42,12 @@ class SearchStagnantFragment : Fragment() {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
         }
+    }
+
+    override fun onPause() {
+        super.onPause()
+        myListSearch.clear()
+        list.clear()
     }
 
     override fun onCreateView(
@@ -66,6 +72,7 @@ class SearchStagnantFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
+        list.clear()
         ref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
@@ -102,19 +109,12 @@ class SearchStagnantFragment : Fragment() {
 
 
         })
-       
-    }
 
-    override fun onStop() {
-        super.onStop()
-        list.clear()
-        myListSearch.clear()
     }
 
 
     private fun search(word: String) {
-
-
+        myListSearch.clear()
         for (data in list) {
             if (data.stagnantName.toLowerCase(Locale.ROOT)
                     .contains(word.toLowerCase(Locale.ROOT))
@@ -122,7 +122,8 @@ class SearchStagnantFragment : Fragment() {
                 myListSearch.add(data)
             }
         }
-        binding.searchStagnantRecyclerView.adapter = SearchStagnantAdapter(requireContext(), myListSearch)
+        binding.searchStagnantRecyclerView.adapter =
+            SearchStagnantAdapter(requireContext(), myListSearch)
     }
 
 

@@ -18,7 +18,6 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import java.lang.Exception
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -78,7 +77,7 @@ class ShowStagnantFragment : Fragment() {
 
     override fun onStart() {
         super.onStart()
-
+        list.clear()
         ref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
                 if (snapshot.exists()) {
@@ -92,7 +91,8 @@ class ShowStagnantFragment : Fragment() {
                         binding.stagnantItemsRecyclerView.adapter =
                             StagnantShowAdapter(requireContext(), list)
 
-                    }catch (ex:Exception){}
+                    } catch (ex: Exception) {
+                    }
 
 
                 }
@@ -106,11 +106,10 @@ class ShowStagnantFragment : Fragment() {
 
     }
 
-    override fun onStop() {
-        super.onStop()
+    override fun onPause() {
+        super.onPause()
         list.clear()
     }
-
 
 
     private fun showProgressDialog() {

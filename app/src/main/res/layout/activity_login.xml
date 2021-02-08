@@ -17,7 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="#00C97A"
-            android:paddingLeft="10dp" />
+            android:paddingLeft="10dp"
+            android:paddingStart="10dp" />
 
         <ImageView
             android:layout_width="@dimen/image_fast_width"
