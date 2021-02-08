@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Fast Do</string>
+    <string name="title_activity_home">Fast Do</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Fast Do</string>
+    <string name="nav_header_subtitle">www.fastdo.co</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="join_now">انضم الان</string>
+    <string name="join_us_as_pharmcy">انضم الينا ك/صيدلي</string>
+    <string name="pharmacy_name">اسم الصيدلية</string>
+    <string name="pharmacy_manager_name">اسم المدير للصيدلية</string>
+    <string name="pharmacy_owner_name">اسم المالك للصيدلية</string>
+    <string name="previous">السابق</string>
+    <string name="next">التالي</string>
+    <string name="do_you_have_account">هل لديك حساب بالفعل؟ ادخل حسابك من </string>
+    <string name="here"> هنا </string>
+    <string name="login">تسجيل دخول</string>
+    <string name="email_address">البريد الالكتروني</string>
+    <string name="password">كلمة السر</string>
+    <string name="enter__as">الدخول ك</string>
+    <string name="pharmacy">صيدلية</string>
+    <string name="store">مخزن</string>
+    <string name="did_you_forget_password">هل نسيت كلمة السر؟</string>
+    <string name="enter_now">دخول الان</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="upload_licence_pic">ارفع ملف صورة الترخيص</string>
+    <string name="phone_number">رقم تلفون محمول</string>
+    <string name="telephne_number">رقم التلفون الارضي</string>
+    <string name="address">العنوان التفصيلي</string>
+    <string name="confirm_passwrod">تأكيد كلمة السر</string>
+    <string name="title_activity_stagnant">StagnantActivity</string>
+    <string name="add_stagnant">أضف راكد</string>
+    <string name="show_stagnant">عرض الرواكد</string>
+    <string name="requested_stagnant">رواكد قمنا بطلبها</string>
+    <string name="sent_stagnant">طلبات ارسلت الينا</string>
+    <string name="stagnant_name">اسم الراكد</string>
+    <string name="stagnant_amount">الكمية</string>
+    <string name="sales_percentage">نسبة الخصم في حالة البيع مباشرة بدون استبدال</string>
+    <string name="express_your_product">عبر عن منتجك بالتفصيل</string>
+    <string name="send">ارسال</string>
+    <string name="name">الاسم</string>
+    <string name="type">النوع</string>
+    <string name="price">السعر</string>
+    <string name="amount">الكمية</string>
+    <string name="control">حذف</string>
+    <string name="expiry_date">تاريخ الصلاحية</string>
+    <string name="brief_address">العنوان</string>
+    <string name="amount_of_request">عدد مرات الطلب</string>
+    <string name="buy">ارسال طلب شراء</string>
+    <string name="stagnant_managment">إدارة رواكدي</string>
+    <string name="search_stagnant">البحث عن رواكد</string>
+    <string name="edit">تعديل</string>
+    <string name="title_activity_base">baseActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="please_wait">please wait</string>
+    <string name="unit_price">سعر الوحدة</string>
+    <string name="expiryDate">تاريخ صلاحية الراكد</string>
+    <string name="logout">تسجيل خروج</string>
+    <string name="settings">اعدادات</string>
+    <string name="title_activity_stagnant_drawer">StagnantDrawerActivity</string>
+    <string name="unit_type">نوع الوحدة</string>
+    <string name="type_price">نوع السعر</string>
+    <string name="contact_info">بيانات التواصل(رقم الهاتف,العنوان)</string>
+    <string name="contact">بيانات التواصل</string>
+    <string name="confirm">تأكيد</string>
+    <string name="profile">الملف الشخصي</string>
+
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".register.IDsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#00C97A"
+            android:paddingLeft="10dp" />
+
+        <ImageView
+            android:layout_width="@dimen/image_fast_width"
+            android:layout_height="@dimen/image_fast_height"
+            android:layout_gravity="right"
+            android:theme="@style/toolbar_image" />
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_upload_licence_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@android:drawable/ic_menu_gallery"
+                android:drawableRight="@android:drawable/ic_menu_gallery"
+                android:text="@string/upload_licence_pic" />
+
+            <ImageView
+                android:id="@+id/iv_uploaded_licence_pic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="50dp"
+                android:contentDescription="image"
+                android:scaleType="fitXY" />
+
+            <Button
+                android:id="@+id/btn_upload_commercial_record_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:drawableEnd="@android:drawable/ic_menu_gallery"
+                android:drawableRight="@android:drawable/ic_menu_gallery"
+                android:text="ارفع صورة الملف التجاري" />
+
+            <ImageView
+                android:id="@+id/iv_uploaded_commercial_record_pic"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_margin="50dp"
+                android:contentDescription="image"
+                android:scaleType="fitXY" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="right"
+                android:paddingEnd="20dp"
+                android:paddingRight="20dp">
+
+                <Button
+                    android:id="@+id/btn_join_now"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:theme="@style/ButtonNext" />
+
+                <TextView
+                    android:id="@+id/btn_previous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/previous"
+                    android:textColor="@color/app_color" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

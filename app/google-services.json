@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "226035873622",
+    "firebase_url": "https://myapplication-7fbdf.firebaseio.com",
+    "project_id": "myapplication-7fbdf",
+    "storage_bucket": "myapplication-7fbdf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226035873622:android:4749f09f8d81a0e1eac8f7",
+        "android_client_info": {
+          "package_name": "com.example.fastdo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226035873622-n4os7olt4fe62qsghvbttf3n5icejeo4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhTXrg-CMCmuJ3R67DKwYW_QRQTbh4KGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "226035873622-l3v121n9s2ggpjnmfgi5e8hcfg9nrm6c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

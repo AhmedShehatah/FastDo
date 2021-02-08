@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Cities">
+        <item>سوهاج</item>
+        <item>اسيوط</item>
+    </string-array>
+    <string-array name="Sohag_Centers">
+        <item>جرجا</item>
+        <item>ساقلتة</item>
+        <item>دار السلام</item>
+        <item>أخميم</item>
+        <item>جهينة</item>
+        <item>البلينا</item>
+        <item>المحافظة</item>
+        <item>طهطا</item>
+        <item>المراغة</item>
+        <item>طما</item>
+    </string-array>
+    <string-array name="Asut_Centers">
+        <item>المحافظة</item>
+        <item>صدفة</item>
+        <item>البداري</item>
+        <item>أبو تيج</item>
+    </string-array>
+    <string-array name="stagnant_type" >
+        <item>اقراص</item>
+        <item>شراب</item>
+        <item>حقن</item>
+        <item>نقط</item>
+        <item>قطرة</item>
+        <item>بخاخ</item>
+        <item>دهان</item>
+        <item>كبسول</item>
+        <item>كريم</item>
+        <item>بدرة</item>
+        <item>فوار</item>
+        <item>مستلزمات تغذية</item>
+        <item>مستلزمات شعر</item>
+        <item>مستلزمات تزيين</item>
+        <item>لا شىء من هذا</item>
+    </string-array>
+    <string-array name="unit_type" >
+
+        <item>شريط</item>
+        <item>علبة</item>
+        <item>كرتونة</item>
+        <item>كبسولة</item>
+        <item>وحدة/صنف اخر</item>
+    </string-array>
+    <string-array name="price_type" >
+
+        <item>سعر جديد</item>
+        <item>سعر قديم</item>
+    </string-array>
+</resources>

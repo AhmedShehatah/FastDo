@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addStagnantMenuItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_add"
+        android:title="@string/add_stagnant"/>
+    <item
+        android:id="@+id/showStagnantMenuItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_show_chart"
+        android:title="@string/show_stagnant"/>
+    <item
+        android:id="@+id/requestedStagnantMenuItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_bookmark"
+        android:title="@string/requested_stagnant"/>
+    <item
+        android:id="@+id/sentStagnantMenuItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_action_sms"
+        android:title="@string/sent_stagnant"/>
+    <item
+        android:id="@+id/searchStagnantMenuItem"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search_stagnant"/>
+</menu>

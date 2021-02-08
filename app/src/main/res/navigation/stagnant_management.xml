@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stagnant_management"
+    app:startDestination="@id/addStagnantFragment">
+    <fragment
+        android:id="@+id/addStagnantFragment"
+        android:name="com.example.fastdo.stagnantactivities.AddStagnantFragment"
+        android:label="fragment_add_stagnant"
+        tools:layout="@layout/fragment_add_stagnant" >
+        <action
+            android:id="@+id/action_addStagnantFragment_to_requestedStagnantFragment"
+            app:destination="@id/requestedStagnantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showStagnantFragment"
+        android:name="com.example.fastdo.stagnantactivities.ShowStagnantFragment"
+        android:label="fragment_show_stagnant"
+        tools:layout="@layout/fragment_show_stagnant" >
+        <action
+            android:id="@+id/action_showStagnantFragment_to_addStagnantFragment"
+            app:destination="@id/addStagnantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestedStagnantFragment"
+        android:name="com.example.fastdo.stagnantactivities.RequestedStagnantFragment"
+        android:label="fragment_requested_stagnant"
+        tools:layout="@layout/fragment_requested_stagnant" >
+        <action
+            android:id="@+id/action_requestedStagnantFragment_to_sentStagnantFragment"
+            app:destination="@id/sentStagnantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sentStagnantFragment"
+        android:name="com.example.fastdo.stagnantactivities.SentStagnantFragment"
+        android:label="fragment_sent_stagnant"
+        tools:layout="@layout/fragment_sent_stagnant" />
+</navigation>

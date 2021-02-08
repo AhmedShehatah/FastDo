@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/homeimage"
+    android:gravity="center|top"
+    android:orientation="vertical"
+    tools:context=".ui.home.HomeFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="30dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:theme="@style/toolbar" />
+
+        <ImageView
+            android:layout_width="@dimen/image_fast_width"
+            android:layout_height="@dimen/image_fast_height"
+            android:layout_gravity="left"
+            android:theme="@style/toolbar_image" />
+    </FrameLayout>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/pharmcy_icon_rounded"
+        android:contentDescription="image"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pharmacy_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="@string/join_us_as_pharmcy"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_pharmacy_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:drawableEnd="@drawable/ic_person"
+            android:drawableRight="@drawable/ic_person"
+            android:text="@string/login"
+            app:backgroundTint="@color/app_color" />
+
+        <Button
+            android:id="@+id/btn_pharmacy_join"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_person_add"
+            android:drawableRight="@drawable/outline_person_add_24"
+            android:text="@string/join_now"
+            app:backgroundTint="@color/app_color" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/pharmcy_icon_rounded"
+        android:contentDescription="image"
+        android:scaleType="fitCenter"
+        android:src="@drawable/store_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="انضم الينا ك/مخزن"
+        android:textColor="@color/white"
+        android:textSize="23sp" />
+
+
+    <Button
+        android:id="@+id/btnJoinAsStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_person_add"
+        android:text="@string/join_now"
+        app:backgroundTint="@color/app_color" />
+</LinearLayout>
